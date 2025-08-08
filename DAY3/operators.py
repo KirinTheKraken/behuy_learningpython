@@ -111,10 +111,8 @@ print(7 // 3 == int(2.7))  # True
 print(type('10') == type(10))  # False
 
 #20
-try:
-    print(int('9.8') == 10)
-except ValueError as e:
-    print("Error:", e)
+print("20")
+print(int('9.8') == 10)
 
 #21
 hours = float(input("Enter hours: "))
