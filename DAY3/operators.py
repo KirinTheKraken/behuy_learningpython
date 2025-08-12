@@ -111,8 +111,14 @@ print(7 // 3 == int(2.7))  # True
 print(type('10') == type(10))  # False
 
 #20
-print("20")
-print(int('9.8') == 10)
+value = '9.8'
+
+if value.replace('.', '', 1).isdigit():
+    result = int(float(value)) == 10
+else:
+    result = False
+
+print(result)
 
 #21
 hours = float(input("Enter hours: "))
