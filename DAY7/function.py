@@ -136,3 +136,15 @@ def is_prime(n):
     if (n%i) == 0:
       return False
   return True
+#2 Write a functions which checks if all items are unique in the list
+def unique_items(lst):
+    return len(lst) == len(set(lst))
+
+#3 Write a function which checks if all the items of the list are of the same data type
+def same_data_type(lst):
+    return len({type(item) for item in lst}) == 1
+
+#4 Write a function which check if provided variable is a valid python variable
+def valid_variable(name):
+    import keyword
+    return name.isidentifier() and not keyword.iskeyword(name)
